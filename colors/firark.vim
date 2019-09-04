@@ -26,6 +26,8 @@ let s:firark13_gui = "#ffcb8d"
 let s:firark14_gui = "#97d28b"
 let s:firark15_gui = "#ff8faa"
 
+let s:extend_purple_gui = "#d787c2"
+
 let s:firark1_term = "0"
 let s:firark3_term = "8"
 let s:firark6_term = "6"
@@ -194,7 +196,7 @@ call s:hi("StorageClass", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("String", s:firark15_gui, "", s:firark15_term, "", "", "")
 call s:hi("Structure", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("Tag", s:firark4_gui, "", "", "", "", "")
-call s:hi("Todo", s:firark13_gui, "NONE", s:firark13_term, "NONE", "", "")
+call s:hi("Todo", s:firark13_gui, "NONE", s:firark13_term, "NONE", "bold,underline", "")
 call s:hi("Type", s:firark7_gui, "", s:firark7_term, "", "NONE", "")
 call s:hi("Typedef", s:firark7_gui, "", s:firark7_term, "", "", "")
 hi! link Macro Define
@@ -353,6 +355,7 @@ hi! link podFormat Keyword
 
 hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
+call s:hi("pythonDot", s:extend_purple_gui, "", "", "", "", "")
 
 call s:hi("rubyConstant", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("rubySymbol", s:firark6_gui, "", s:firark6_term, "", "bold", "")
