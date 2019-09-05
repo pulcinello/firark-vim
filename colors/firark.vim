@@ -126,7 +126,7 @@ call s:hi("VisualNOS", "", s:firark2_gui, "", s:firark1_term, "", "")
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:firark1_gui, "NONE", s:firark1_term, "", "")
-call s:hi("CursorLineNr", s:firark3_gui, s:firark0_gui, "NONE", "", "", "")
+call s:hi("CursorLineNr", s:firark4_gui, s:firark1_gui, "NONE", "", "", "")
 call s:hi("Folded", s:firark3_gui, s:firark1_gui, s:firark3_term, s:firark1_term, "bold", "")
 call s:hi("FoldColumn", s:firark3_gui, s:firark0_gui, s:firark3_term, "NONE", "", "")
 call s:hi("SignColumn", s:firark1_gui, s:firark0_gui, s:firark1_term, "NONE", "", "")
@@ -355,7 +355,7 @@ hi! link podFormat Keyword
 
 hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
-call s:hi("pythonDot", s:extend_purple_gui, "", "", "", "", "")
+call s:hi("pythonDot", s:extend_purple_gui, "", s:firark15_term, "", "", "")
 
 call s:hi("rubyConstant", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("rubySymbol", s:firark6_gui, "", s:firark6_term, "", "bold", "")
