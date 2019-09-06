@@ -21,8 +21,5 @@ set termguicolors
 colorscheme firark
 ```
 
-# TODO
-- [ ] [LeaderF](https://github.com/Yggdroot/LeaderF) theme
-
 ![vim](assets/vim.png)
 
