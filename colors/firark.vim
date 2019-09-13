@@ -457,6 +457,11 @@ hi! link NERDTreeHelp Comment
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
 
+" LeaderF
+" > Yggdroot/LeaderF
+call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underline", "")
+call s:hi("Lf_hl_matchRefine", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
+
 " vim-plug
 " > junegunn/vim-plug
 call s:hi("plugDeleted", s:firark11_gui, "", "", s:firark11_term, "", "")
