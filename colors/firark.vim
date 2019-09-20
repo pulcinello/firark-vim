@@ -462,6 +462,10 @@ hi! link CtrlPBufferHid Normal
 call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underline", "")
 call s:hi("Lf_hl_matchRefine", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
 
+" clever-f.vim
+" > rhysd/clever-f.vim
+call s:hi("CleverFDefaultLabel", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
+
 " vim-plug
 " > junegunn/vim-plug
 call s:hi("plugDeleted", s:firark11_gui, "", "", s:firark11_term, "", "")
