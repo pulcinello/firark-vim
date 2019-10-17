@@ -462,6 +462,10 @@ hi! link CtrlPBufferHid Normal
 call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underline", "")
 call s:hi("Lf_hl_matchRefine", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
 
+" vim-clap
+" > liuchengxu/vim-clap
+call s:hi("ClapMatches", s:firark14_gui, s:firark2_gui, s:firark14_term, s:firark1_term, "bold,underline", "")
+
 " clever-f.vim
 " > rhysd/clever-f.vim
 call s:hi("CleverFDefaultLabel", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
@@ -504,4 +508,3 @@ hi! link mkdLinkDef mkdLink
 hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
-
