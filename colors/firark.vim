@@ -461,7 +461,7 @@ hi! link CtrlPBufferHid Normal
 " > Yggdroot/LeaderF
 call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underline", "")
 call s:hi("Lf_hl_matchRefine", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
-call s:hi("Lf_hl_cursorline", s:firark6_gui, "", s:firark6_term, "", "bold", "")
+call s:hi("Lf_hl_cursorline", s:firark7_gui, "", s:firark7_term, "", "bold", "")
 
 " vim-clap
 " > liuchengxu/vim-clap
