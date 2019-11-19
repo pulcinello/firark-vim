@@ -463,6 +463,11 @@ call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underlin
 call s:hi("Lf_hl_matchRefine", s:firark15_gui, "", s:firark15_term, "", "bold,underline", "")
 call s:hi("Lf_hl_cursorline", s:firark7_gui, "", s:firark7_term, "", "bold", "")
 
+" quick-scope
+" > unblevable/quick-scope
+call s:hi("QuickScopePrimary", s:firark13_gui, "", s:firark13_term, "", "underline", "")
+call s:hi("QuickScopeSecondary", s:firark12_gui, "", s:firark12_term, "", "underline", "")
+
 " vim-clap
 " > liuchengxu/vim-clap
 call s:hi("ClapMatches", s:firark14_gui, s:firark2_gui, s:firark14_term, s:firark1_term, "bold,underline", "")
