@@ -514,3 +514,23 @@ hi! link mkdLinkDef mkdLink
 hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
+
+" neovim terminal
+if has('nvim')
+  let g:terminal_color_0 = s:firark1_gui
+  let g:terminal_color_1 = s:firark11_gui
+  let g:terminal_color_2 = s:firark14_gui
+  let g:terminal_color_3 = s:firark13_gui
+  let g:terminal_color_4 = s:firark9_gui
+  let g:terminal_color_5 = s:firark15_gui
+  let g:terminal_color_6 = s:firark8_gui
+  let g:terminal_color_7 = s:firark5_gui
+  let g:terminal_color_8 = s:firark3_gui
+  let g:terminal_color_9 = s:firark11_gui
+  let g:terminal_color_10 = s:firark14_gui
+  let g:terminal_color_11 = s:firark13_gui
+  let g:terminal_color_12 = s:firark9_gui
+  let g:terminal_color_13 = s:firark15_gui
+  let g:terminal_color_14 = s:firark7_gui
+  let g:terminal_color_15 = s:firark6_gui
+endif
