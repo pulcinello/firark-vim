@@ -534,3 +534,8 @@ if has('nvim')
   let g:terminal_color_14 = s:firark7_gui
   let g:terminal_color_15 = s:firark6_gui
 endif
+
+" Vim 8 Terminal Colors
+if has('terminal')
+  let g:terminal_ansi_colors = [s:firark1_gui, s:firark11_gui, s:firark14_gui, s:firark13_gui, s:firark9_gui, s:firark15_gui, s:firark8_gui, s:firark5_gui, s:firark3_gui, s:firark11_gui, s:firark14_gui, s:firark13_gui, s:firark9_gui, s:firark15_gui, s:firark7_gui, s:firark6_gui]
+endif
