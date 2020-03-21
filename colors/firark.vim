@@ -9,6 +9,7 @@ let g:colors_name = "firark"
 let s:firark_vim_version="0.8.0"
 set background=dark
 
+" base colors
 let s:firark0_gui = "#282a36"
 let s:firark1_gui = "#343746"
 let s:firark2_gui = "#3e4154"
@@ -26,7 +27,9 @@ let s:firark13_gui = "#ffcb8d"
 let s:firark14_gui = "#97d28b"
 let s:firark15_gui = "#ff8faa"
 
-let s:extend_purple_gui = "#d787c2"
+" additional colors
+let s:firark16_gui = "#d787c2"
+let s:firark17_gui = "#6e6e6e"
 
 let s:firark1_term = "0"
 let s:firark3_term = "8"
@@ -172,7 +175,7 @@ call s:hi("VertSplit", s:firark2_gui, s:firark1_gui, s:firark3_term, s:firark1_t
 "+----------------------+
 call s:hi("Boolean", s:firark8_gui, "", s:firark8_term, "", "", "")
 call s:hi("Character", s:firark7_gui, "", s:firark7_term, "", "", "")
-call s:hi("Comment", s:firark3_gui, "", s:firark3_term, "", s:italicize_comments, "")
+call s:hi("Comment", s:firark17_gui, "", s:firark3_term, "", s:italicize_comments, "")
 call s:hi("Conditional", s:firark8_gui, "", s:firark8_term, "", "", "")
 call s:hi("Constant", s:firark8_gui, "", s:firark8_term, "", "", "")
 call s:hi("Define", s:firark13_gui, "", s:firark13_term, "", "", "")
@@ -353,9 +356,52 @@ call s:hi("podCmdText", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("podVerbatimLine", s:firark4_gui, "", "NONE", "", "", "")
 hi! link podFormat Keyword
 
-hi! link pythonBuiltin Type
-hi! link pythonEscape SpecialChar
-call s:hi("pythonDot", s:extend_purple_gui, "", s:firark15_term, "", "", "")
+" Python
+" hi! link pythonBuiltin Type
+" hi! link pythonEscape SpecialChar
+hi! link pythonFString Define
+hi! link pythonRawFString Define
+call s:hi("pythonDot", s:firark16_gui, "", s:firark15_term, "", "", "")
+
+" Haskell
+" > neovimhaskell/haskell-vim
+call s:hi("haskellPreProc", s:firark10_gui, "", s:firark10_term, "", "", "")
+call s:hi("haskellType", s:firark7_gui, "", s:firark7_term, "", "", "")
+hi! link haskellPragma haskellPreProc
+
+" JavaScript
+" > pangloss/vim-javascript
+call s:hi("jsGlobalNodeObjects", s:firark8_gui, "", s:firark8_term, "", s:italic, "")
+hi! link jsBrackets Delimiter
+hi! link jsFuncCall Function
+hi! link jsFuncParens Delimiter
+hi! link jsNoise Delimiter
+hi! link jsPrototype Keyword
+hi! link jsRegexpString SpecialChar
+
+" Markdown
+" > plasticboy/vim-markdown
+call s:hi("mkdCode", s:firark7_gui, "", s:firark7_term, "", "", "")
+call s:hi("mkdFootnote", s:firark8_gui, "", s:firark8_term, "", "", "")
+call s:hi("mkdRule", s:firark10_gui, "", s:firark10_term, "", "", "")
+call s:hi("mkdLineBreak", s:firark9_gui, "", s:firark9_term, "", "", "")
+hi! link mkdBold Bold
+hi! link mkdItalic Italic
+hi! link mkdString Keyword
+hi! link mkdCodeStart mkdCode
+hi! link mkdCodeEnd mkdCode
+hi! link mkdBlockquote Comment
+hi! link mkdListItem Keyword
+hi! link mkdListItemLine Normal
+hi! link mkdFootnotes mkdFootnote
+hi! link mkdLink markdownLinkText
+hi! link mkdURL markdownUrl
+hi! link mkdInlineURL mkdURL
+hi! link mkdID Identifier
+hi! link mkdLinkDef mkdLink
+hi! link mkdLinkDefTarget mkdURL
+hi! link mkdLinkTitle mkdInlineURL
+hi! link mkdDelimiter Keyword
 
 call s:hi("rubyConstant", s:firark7_gui, "", s:firark7_term, "", "", "")
 call s:hi("rubySymbol", s:firark6_gui, "", s:firark6_term, "", "bold", "")
@@ -486,41 +532,6 @@ call s:hi("CleverFDefaultLabel", s:firark15_gui, "", s:firark15_term, "", "bold,
 " vim-plug
 " > junegunn/vim-plug
 call s:hi("plugDeleted", s:firark11_gui, "", "", s:firark11_term, "", "")
-
-"+--- Languages ---+
-" JavaScript
-" > pangloss/vim-javascript
-call s:hi("jsGlobalNodeObjects", s:firark8_gui, "", s:firark8_term, "", s:italic, "")
-hi! link jsBrackets Delimiter
-hi! link jsFuncCall Function
-hi! link jsFuncParens Delimiter
-hi! link jsNoise Delimiter
-hi! link jsPrototype Keyword
-hi! link jsRegexpString SpecialChar
-
-" Markdown
-" > plasticboy/vim-markdown
-call s:hi("mkdCode", s:firark7_gui, "", s:firark7_term, "", "", "")
-call s:hi("mkdFootnote", s:firark8_gui, "", s:firark8_term, "", "", "")
-call s:hi("mkdRule", s:firark10_gui, "", s:firark10_term, "", "", "")
-call s:hi("mkdLineBreak", s:firark9_gui, "", s:firark9_term, "", "", "")
-hi! link mkdBold Bold
-hi! link mkdItalic Italic
-hi! link mkdString Keyword
-hi! link mkdCodeStart mkdCode
-hi! link mkdCodeEnd mkdCode
-hi! link mkdBlockquote Comment
-hi! link mkdListItem Keyword
-hi! link mkdListItemLine Normal
-hi! link mkdFootnotes mkdFootnote
-hi! link mkdLink markdownLinkText
-hi! link mkdURL markdownUrl
-hi! link mkdInlineURL mkdURL
-hi! link mkdID Identifier
-hi! link mkdLinkDef mkdLink
-hi! link mkdLinkDefTarget mkdURL
-hi! link mkdLinkTitle mkdInlineURL
-hi! link mkdDelimiter Keyword
 
 " neovim terminal
 if has('nvim')
