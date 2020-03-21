@@ -457,6 +457,13 @@ hi! link NERDTreeHelp Comment
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
 
+" Coc
+" > neoclide/coc
+call s:hi("CocWarningSign", s:firark13_gui, "", s:firark13_term, "", "", "")
+call s:hi("CocErrorSign" , s:firark11_gui, "", s:firark11_term, "", "", "")
+call s:hi("CocInfoSign" , s:firark8_gui, "", s:firark8_term, "", "", "")
+call s:hi("CocHintSign" , s:firark10_gui, "", s:firark10_term, "", "", "")
+
 " LeaderF
 " > Yggdroot/LeaderF
 call s:hi("Lf_hl_match", s:firark14_gui, "", s:firark14_term, "", "bold,underline", "")
